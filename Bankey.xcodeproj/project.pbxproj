@@ -26,6 +26,8 @@
 		6F2C268729A8DE450056FCE7 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C268629A8DE450056FCE7 /* CurrencyFormatter.swift */; };
 		6F2C268929AABA020056FCE7 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C268829AABA020056FCE7 /* UITextField+SecureToggle.swift */; };
 		6F2C268C29ACC9A60056FCE7 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C268B29ACC9A60056FCE7 /* ShakeyBellView.swift */; };
+		6F2C268E29AE16A30056FCE7 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C268D29AE16A30056FCE7 /* Date+Utils.swift */; };
+		6F2C269029AE17DA0056FCE7 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C268F29AE17D90056FCE7 /* AccountSummaryViewController+Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		6F2C268629A8DE450056FCE7 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		6F2C268829AABA020056FCE7 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		6F2C268B29ACC9A60056FCE7 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
+		6F2C268D29AE16A30056FCE7 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
+		6F2C268F29AE17D90056FCE7 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 				6F2C267629A633C80056FCE7 /* UIViewController+Utils.swift */,
 				6F2C268629A8DE450056FCE7 /* CurrencyFormatter.swift */,
 				6F2C268829AABA020056FCE7 /* UITextField+SecureToggle.swift */,
+				6F2C268D29AE16A30056FCE7 /* Date+Utils.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				6F2C268329A787770056FCE7 /* cell */,
 				6F2C268129A787590056FCE7 /* header */,
 				6F2C267B29A77E330056FCE7 /* AccountSummaryViewController.swift */,
+				6F2C268F29AE17D90056FCE7 /* AccountSummaryViewController+Networking.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -247,6 +253,8 @@
 				6F2C2667299E4F0B0056FCE7 /* LoginView.swift in Sources */,
 				6F2C2655299E4AB80056FCE7 /* LoginViewController.swift in Sources */,
 				6F2C268929AABA020056FCE7 /* UITextField+SecureToggle.swift in Sources */,
+				6F2C268E29AE16A30056FCE7 /* Date+Utils.swift in Sources */,
+				6F2C269029AE17DA0056FCE7 /* AccountSummaryViewController+Networking.swift in Sources */,
 				6F2C268729A8DE450056FCE7 /* CurrencyFormatter.swift in Sources */,
 				6F2C266E29A506E90056FCE7 /* GradientView.swift in Sources */,
 				6F2C267729A633C80056FCE7 /* UIViewController+Utils.swift in Sources */,

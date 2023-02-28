@@ -23,3 +23,7 @@ public class LocalState {
         }
     }
 }
+
+extension Notification.Name {
+     static let logout = Notification.Name("Logout")
+}

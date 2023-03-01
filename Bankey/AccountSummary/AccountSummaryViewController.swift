@@ -19,6 +19,7 @@ class AccountSummaryViewController: UIViewController {
     
     var tableView = UITableView()
     var headerView = AccountSummaryHeaderView(frame: .zero)
+    let refreshControl = UIRefreshControl()
     
     lazy var logoutBarButtonItem: UIBarButtonItem = {
         let barButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutTapped))
@@ -41,7 +42,14 @@ extension AccountSummaryViewController {
     private func setup() {
         setupTableView()
         setupTableHeaderView()
+        setupRefreshControl()
         fetchData()
+    }
+    
+    private func setupRefreshControl() {
+        refreshControl.tintColor = appColor
+        refreshControl.addTarget(self, action: #selector(refreshContent), for: .valueChanged)
+        tableView.refreshControl = refreshControl
     }
     
     private func setupTableView() {
@@ -135,8 +143,9 @@ extension AccountSummaryViewController {
             group.leave()
         }
         group.notify(queue: .main) {
-                    self.tableView.reloadData() // add
-                }
+            self.tableView.reloadData()
+            self.tableView.refreshControl?.endRefreshing()// add
+        }
     }
     
     private func configureTableHeaderView(with profile: Profile) {
@@ -152,5 +161,12 @@ extension AccountSummaryViewController {
                                          accountName: $0.name,
                                          balance: $0.amount)
         }
+    }
+}
+
+// MARK: Actions
+extension AccountSummaryViewController {
+    @objc func refreshContent() {
+            fetchData()
     }
 }
